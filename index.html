@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>BIGLIETTO TRENO</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+      <div class="dati">
+
+        <div class="nc" >
+          <h4>Nome  Cognome</h4>
+          <input type="text" id="anag" name="" value="">
+        </div>
+
+        <div class="km" >
+          <h4>Km da percorrere</h4>
+          <input type="text" id="trip"name="" value="">
+
+        </div>
+
+        <div class="eta">
+          <h4>Fascia d'età</h4>
+          <select id="myselect">
+            <option value="0">Minorenne</option>
+            <option value="1">Maggiorenne</option>
+            <option value="2">Over 65</option>
+            </select>
+        </div>
+        <button type="button" id="genera"name="button">Genera</button>
+        <button type="button" id="cancella"name="button">Annulla</button>
+
+      </div>
+
+      <h2>IL TUO BIGLIETTO</h2>
+
+      <div class="ticket"id="hidden">
+
+        <h3>DETTAGLIO PASSEGGERI</h3>
+        <hr>
+
+
+        <div class="pass"id"passenger">
+          <h4>NOME PASSEGGERO</h4>
+          <p id="demo"></p>
+
+
+        </div>
+
+        <div class="tabella">
+        <table>
+          <tr>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <p id="carrozza"></p>
+            <th>Codice</th>
+            <div id="price">
+            <th>Costo Biglietto</th>
+            </div>
+          </tr>
+        </table>
+        </div>
+
+      </div>
+
+      </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
