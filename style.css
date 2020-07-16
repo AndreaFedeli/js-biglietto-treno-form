@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(153, 0, 51);
+}
+
+h2{
+  text-align: center;
+  color:white;
+  border-top:50px;
+}
+
+.dati{
+  width: 600px;
+  height: 250px;
+  margin-left: 30%;
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+input{
+  margin-left: 30px;
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+  border:1px solid rgb(153, 0, 51);
+  text-align: center;
+}
+
+select{
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: white;
+  border:1px solid rgb(153, 0, 51);
+}
+
+option{
+color: white;
+}
+
+.nc{
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.nc h4{
+  text-align: center;
+  color: rgb(153, 0, 51);
+}
+
+.km {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  margin-top: 50px;
+
+}
+
+.km h4{
+  text-align: center;
+  color: rgb(153, 0, 51);
+
+}
+
+.eta{
+  width: 200px;
+  height: 100px;
+  margin-top: 50px;
+}
+
+select{
+background-color: rgb(153, 0, 51);
+
+}
+
+
+.eta h4{
+  text-align: center;
+  color: rgb(153, 0, 51);
+
+}
+
+button{
+  width: 100px;
+  height: 40px;
+  background-color: lightgrey;
+  margin-left: 30px;
+  color: rgb(153, 0, 51);
+  border-radius: 5px;
+  border:1px solid rgb(153, 0, 51);
+
+}
+
+.ticket{
+  width: 600px;
+  height: 250px;
+  margin-left: 30%;
+  background-color: white;
+  margin-top: 30px;
+
+
+}
+
+.pass{
+  width: 200px;
+  height: 190px;
+  background-color: grey;
+  float: left;
+
+
+}
+
+.pass h4{
+  padding-top: 20px;
+}
+
+.tabella{
+  width: 400px;
+  height: 190px;
+  background-color: white;
+  float: left;
+  padding-top: 20px;
+
+}
+
+th{
+  padding-left: 30px;
+}
