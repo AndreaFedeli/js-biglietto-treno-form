@@ -128,13 +128,29 @@ button{
 
 .tabella{
   width: 400px;
-  height: 190px;
+  height: 50px;
   background-color: white;
   float: left;
   padding-top: 20px;
 
 }
 
+.biglietto{
+  width: 400px;
+  height: 140px;
+  background-color: white;
+  float: left;
+  margin-bottom: 50px;
+  display: inline;
+
+}
+
+.biglietto table{
+  display: inline;
+  margin-left: 10px;
+
+}
+
 th{
-  padding-left: 30px;
+  padding-left: 20px;
 }
