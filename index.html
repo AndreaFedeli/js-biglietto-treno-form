@@ -1,81 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <title>Biglietto treno</title>
     <link rel="stylesheet" href="style.css">
-    <title>BIGLIETTO TRENO</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-      <div class="dati">
-
-        <div class="nc" >
-          <h4>Nome  Cognome</h4>
-          <input type="text" id="anag" name="" value="">
+        <h2>calcola il prezzo del tuo biglietto</h2>
+        <div class="form">
+            <div class="row">
+                <div class="name">
+                    <label for="name">Nome Cognome</label>
+                    <input type="text" id="name" name="" value="">
+                    <p id="name-error"></p>
+                </div>
+                <div class="km">
+                    <label for="km">Km da percorrere</label>
+                    <input type="number" id="km" name="" value="">
+                    <p id="km-error"></p>
+                </div>
+                <div class="age">
+                    <label for="age">Fascia d'età</label>
+                    <select id="age">
+                        <option value="1">Adulto</option>
+                        <option value="0.8">Minorenne</option>
+                        <option value="0.6">Over 65</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <button type="button" name="button" id="create">Genera</button>
+                <button type="button" name="button" id="cancel">Annulla</button>
+            </div>
         </div>
-
-        <div class="km" >
-          <h4>Km da percorrere</h4>
-          <input type="text" id="trip"name="" value="">
-
+        <div id="ticket-section" class="ticket hidden">
+            <h2>il tuo biglietto</h2>
+            <div class="ticket-white">
+                <table>
+                    <tr>
+                        <td colspan="5">Dettaglio Passeggeri</td>
+                    </tr>
+                    <tr>
+                        <th>NOME PASSEGGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                        <td id="ticket-name"></td>
+                        <td id="discount"></td>
+                        <td id="coach"></td>
+                        <td id="cp-code"></td>
+                        <td id="price"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <div class="eta">
-          <h4>Fascia d'età</h4>
-          <select id="myselect">
-            <option value="0">Minorenne</option>
-            <option value="1">Maggiorenne</option>
-            <option value="2">Over 65</option>
-            </select>
-        </div>
-        <button type="button" id="genera"name="button">Genera</button>
-        <button type="button" id="cancella"name="button">Annulla</button>
-
-      </div>
-
-      <h2>IL TUO BIGLIETTO</h2>
-
-      <div class="ticket"id="hidden">
-
-        <h3>DETTAGLIO PASSEGGERI</h3>
-        <hr>
-
-
-        <div class="pass"id"passenger">
-          <h4>NOME PASSEGGERO</h4>
-          <p id="demo"></p>
-
-
-        </div>
-
-        <div class="tabella">
-        <table>
-          <tr>
-            <th>Offerta</th>
-            <th>Carrozza</th>
-            <th>Codice</th>
-            <th>Costo Biglietto</th>
-            </tr>
-            </table>
-        </div>
-        <div class="biglietto">
-          <table>
-            <tr>
-              <th>Ciao</th>
-              <th id="carrozza"></th>
-              <th id="codice"></th>
-              
-            </tr>
-
-          </table>
-        </div>
-
-
-
-      </div>
-
-      </div>
+    </div>
     <script src="script.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>

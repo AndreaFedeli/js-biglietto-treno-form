@@ -1,156 +1,158 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #aa2b51;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: white;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form,
+.ticket-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.form {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #252424;
+}
+
+.form p {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form .row:first-child{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+.form label {
+    color: #aa2b51;
+}
+
+.form input {
+    text-align: center;
+    ste
+}
+
+.form input:focus,
+.form select:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-.container{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(153, 0, 51);
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
-h2{
-  text-align: center;
-  color:white;
-  border-top:50px;
+.form input,
+.form select {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 12px;
+    border: 1px solid #aa2b51;
 }
 
-.dati{
-  width: 600px;
-  height: 250px;
-  margin-left: 30%;
-  background-color: white;
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 10px;
-  flex-wrap: wrap;
+.form button {
+    font-size: 16px;
+    padding: 5px 3px;
+    color: #aa2b51;
+    background-color: #cccccc;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-input{
-  margin-left: 30px;
-  width: 150px;
-  height: 30px;
-  margin-top: 20px;
-  border:1px solid rgb(153, 0, 51);
-  text-align: center;
+.form button:active {
+    background-color: #a3a3a3;
 }
 
-select{
-  margin-left: 50px;
-  margin-top: 20px;
-  background-color: white;
-  border:1px solid rgb(153, 0, 51);
+.ticket {
+    text-align: center;
 }
 
-option{
-color: white;
+table {
+    border-bottom: 1px solid #808080;
 }
 
-.nc{
-  width: 200px;
-  height: 100px;
-  background-color: white;
-  margin-top: 50px;
+table, th, td {
+  border-collapse: collapse;
 }
 
-.nc h4{
-  text-align: center;
-  color: rgb(153, 0, 51);
-}
-
-.km {
-  width: 200px;
-  height: 100px;
-  background-color: white;
-  margin-top: 50px;
-
-}
-
-.km h4{
-  text-align: center;
-  color: rgb(153, 0, 51);
-
-}
-
-.eta{
-  width: 200px;
-  height: 100px;
-  margin-top: 50px;
-}
-
-select{
-background-color: rgb(153, 0, 51);
-
+tr,
+th,
+td {
+    text-align: left;
 }
 
 
-.eta h4{
-  text-align: center;
-  color: rgb(153, 0, 51);
-
+th,
+tr:not(:first-child)>td,
+tr>th:not(:first-child){
+    padding: 20px;
 }
 
-button{
-  width: 100px;
-  height: 40px;
-  background-color: lightgrey;
-  margin-left: 30px;
-  color: rgb(153, 0, 51);
-  border-radius: 5px;
-  border:1px solid rgb(153, 0, 51);
-
+tr:first-child td{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
 }
 
-.ticket{
-  width: 600px;
-  height: 250px;
-  margin-left: 30%;
-  background-color: white;
-  margin-top: 30px;
-
-
+tr:nth-child(2) th:first-child,
+tr:nth-child(3) td:first-child {
+    background-color: #808080;
 }
 
-.pass{
-  width: 200px;
-  height: 190px;
-  background-color: grey;
-  float: left;
-
-
+tr:first-child td{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.pass h4{
-  padding-top: 20px;
+.hidden {
+    opacity: 0;
+    transition-duration: 0.2s;
 }
 
-.tabella{
-  width: 400px;
-  height: 50px;
-  background-color: white;
-  float: left;
-  padding-top: 20px;
-
-}
-
-.biglietto{
-  width: 400px;
-  height: 140px;
-  background-color: white;
-  float: left;
-  margin-bottom: 50px;
-  display: inline;
-
-}
-
-.biglietto table{
-  display: inline;
-  margin-left: 10px;
-
-}
-
-th{
-  padding-left: 20px;
+.shown {
+    opacity: 1px;
+    transition-duration: 0.2s;
 }
